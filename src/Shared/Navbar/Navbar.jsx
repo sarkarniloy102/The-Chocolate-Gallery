@@ -14,7 +14,7 @@ const Navbar = () => {
 
         </>
     return (
-        <div className="navbar ">
+        <div className="navbar fixed z-10 bg-opacity-30 text-white bg-black max-w-screen-xl mx-auto ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
                         {navlink}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"><img src={logo} className="w-16 h-16 rounded-full" alt="" /></a>
+                <a className="btn btn-ghost text-xl"><img src={logo} className="w-12 h-12 rounded-full" alt="" /></a>
             </div>
             <div className="navbar-center  hidden lg:flex">
                 <ul className="menu gap-5 menu-horizontal px-1">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className=""><NavLink className="flex items-center gap-1"><p>SIGN IN</p> <CgProfile className="text-xl" />
+                <a className=""><NavLink className="flex items-center gap-1"><p >SIGN IN</p> <CgProfile className="text-xl" />
 </NavLink> </a>
             </div>
         </div>
