@@ -15,10 +15,15 @@ import swipe5 from "../../assets/swiper/5.jpg"
 import swipe6 from "../../assets/swiper/6.jpg"
 import swipe7 from "../../assets/swiper/7.jpg"
 import swipe8 from "../../assets/swiper/8.jpg"
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 
 const Category = () => {
     return (
-        <div>
+        <section>
+            <SectionTitle
+            heading={"order Online"}
+            subheading={"From 11:00am to 10:00pm"}
+            ></SectionTitle>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -52,9 +57,9 @@ const Category = () => {
                 <SwiperSlide>
                     <img src={swipe8} alt="" />
                 </SwiperSlide>
-              
+
             </Swiper>
-        </div>
+        </section>
     );
 };
 
