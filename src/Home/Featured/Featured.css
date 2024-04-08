@@ -1,0 +1,13 @@
+.bg-image {
+    background-image: url("../../assets/swiper/5.jpg");
+    /* parallox scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
