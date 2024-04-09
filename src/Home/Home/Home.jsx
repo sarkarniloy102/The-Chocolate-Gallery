@@ -3,6 +3,7 @@ import Cart from "../Card/Cart";
 import Category from "../Category/Category";
 import Featured from "../Featured/Featured";
 import PopularMenu from "../PopularMenu/PopularMenu";
+import Testimonials from "../Testimonials/Testimonials";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
            <PopularMenu></PopularMenu>
            <Cart></Cart>
            <Featured></Featured>
+           <Testimonials></Testimonials>
         </div>
     );
 };
