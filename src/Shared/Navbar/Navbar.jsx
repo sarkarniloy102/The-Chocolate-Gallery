@@ -6,11 +6,11 @@ const Navbar = () => {
 
     const navlink =
         <>
-            <NavLink>HOME</NavLink>
-            <NavLink>CONTACT US</NavLink>
-            <NavLink>DASHBOARD</NavLink>
-            <NavLink to={"/menu"}>OUR MENU</NavLink>
-            <NavLink>OURSHOP</NavLink>
+            <NavLink className=" font-semibold focus:text-yellow-200">HOME</NavLink>
+            <NavLink className="font-semibold focus:text-yellow-200">CONTACT US</NavLink>
+            <NavLink className="font-semibold focus:text-yellow-200">DASHBOARD</NavLink>
+            <NavLink className="font-semibold focus:text-yellow-200" to={"/menu"}>OUR MENU</NavLink>
+            <NavLink className=" font-semibold focus:text-yellow-200">OURSHOP</NavLink>
 
         </>
     return (
