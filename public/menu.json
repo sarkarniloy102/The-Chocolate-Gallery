@@ -1,83 +1,83 @@
 [
     {
         "_id": "642c155b2c4774f05c36eeb1",
-        "name": "Classic Milk Chocolate",
-        "details": "Creamy milk chocolate bar made from the finest cocoa beans.",
-        "image": "https://example.com/images/milk-chocolate.jpg",
-        "category": "Bars",
-        "price": 2.50
+        "name": "Kinder bueno",
+        "details": "Kinder Bueno chocolate combines creamy hazelnut filling and crispy wafer layers, delivering a delightful balance of sweetness and crunch in every bite.",
+        "image": "https://i.ibb.co/JB8QBX6/CL1.jpg",
+        "category": "Chocolate List",
+        "price": "130tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb2",
-        "name": "Dark Chocolate Truffle",
-        "details": "Luxurious dark chocolate truffles with a velvety ganache center.",
-        "image": "https://example.com/images/dark-truffle.jpg",
-        "category": "Truffles",
-        "price": 5.00
+        "name": "Amul Milk Chocolate",
+        "details": "Amul Milk is a popular brand of dairy milk in India, known for its rich taste and high quality, offered in various types including full cream, toned, and double toned.",
+        "image": "https://i.ibb.co/hHzN0fd/CL2.jpg",
+        "category": "Chocolate List",
+        "price": "220tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb3",
-        "name": "White Chocolate Raspberry",
-        "details": "White chocolate bar infused with real raspberry pieces.",
-        "image": "https://example.com/images/white-raspberry.jpg",
-        "category": "Bars",
-        "price": 3.00
+        "name": "Kitkat White",
+        "details": "KitKat White is a variant of the classic KitKat chocolate bar, featuring crispy wafer layers covered in creamy white chocolate, offering a smooth and sweet twist on the traditional milk chocolate version.",
+        "image": "https://i.ibb.co/gDW8FpV/CL5.jpg",
+        "category": "Chocolate List",
+        "price": "110tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb4",
-        "name": "Vegan Chocolate Almonds",
-        "details": "Roasted almonds covered in vegan dark chocolate.",
-        "image": "https://example.com/images/vegan-almonds.jpg",
-        "category": "Vegan",
-        "price": 4.50
+        "name": "Dairy Milk",
+        "details": "Smooth and creamy milk chocolate beloved worldwide for its rich taste.",
+        "image": "https://i.ibb.co/WnYrbk5/CL8.jpg",
+        "category": "Chocolate List",
+        "price": "30tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb5",
-        "name": "Belgian Chocolate Pralines",
-        "details": "Assorted Belgian chocolate pralines in a variety of flavors.",
-        "image": "https://example.com/images/pralines.jpg",
-        "category": "Pralines",
-        "price": 6.50
+        "name": "Wellchoco",
+        "details": "Wellchoco: A delightful blend of rich cocoa and smooth milk, crafted to indulge your senses.",
+        "image": "https://i.ibb.co/QvbzvjB/CL9.jpg",
+        "category": "Chocolate List",
+        "price": "130tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb6",
-        "name": "Salted Caramel Bliss",
-        "details": "Milk chocolate with a gooey salted caramel filling.",
-        "image": "https://example.com/images/salted-caramel.jpg",
-        "category": "Filled Chocolates",
-        "price": 3.25
+        "name": "Roerat",
+        "details": "Roerat Choco Oatmeal Coating Puff Ball CH-D087: Crispy cookie ball with white chocolate cream filling, coated in chocolate oatmeal.",
+        "image": "https://i.ibb.co/RzncVZB/CL6.jpg",
+        "category": "Chocolate List",
+        "price": "250tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb7",
-        "name": "Coffee Cream Chocolate",
-        "details": "Dark chocolate filled with a smooth coffee cream.",
-        "image": "https://example.com/images/coffee-cream.jpg",
-        "category": "Filled Chocolates",
-        "price": 3.75
+        "name": "colorful gift bag",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/N6ftyn5/gb1.jpg",
+        "category": "Gift Bag",
+        "price": "200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb8",
-        "name": "Strawberry Yogurt Treat",
-        "details": "White chocolate mixed with strawberry yogurt.",
-        "image": "https://example.com/images/strawberry-yogurt.jpg",
-        "category": "Bars",
-        "price": 2.75
+        "name": "Blue gift bag",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/DbRwjms/gb2.jpg",
+        "category": "Gift Bag",
+        "price": "200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeb9",
-        "name": "Lemon Delight",
-        "details": "White chocolate with a tangy lemon filling.",
-        "image": "https://example.com/images/lemon-delight.jpg",
-        "category": "Filled Chocolates",
-        "price": 4.00
+        "name": "Red gift bag",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": " https://i.ibb.co/6svRvqb/gb3.jpg",
+        "category": "Gift Bag",
+        "price": "200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eeba",
-        "name": "Espresso Bean Extravaganza",
-        "details": "Dark chocolate bars loaded with crunchy espresso beans.",
-        "image": "https://example.com/images/espresso-bean.jpg",
-        "category": "Bars",
-        "price": 4.25
+        "name": "Slate gift bag",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/hcp1PFs/gb4.jpg",
+        "category": "Gift Bag",
+        "price": "200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eebb",
