@@ -6,18 +6,18 @@ import SingleCart from "./SingleCart";
 const Cart = () => {
     const [cart, setcart] = useState([]);
     useEffect(() => {
-        fetch('menu.json')
+        fetch('popular.json')
             .then(res => res.json())
             .then(data => {
-                const popularItems = data.filter(item => item.category === 'popular');
+                const popularItems = data.filter(item => item.category === 'Popular');
                 setcart(popularItems)
             })
     }, [])
     return (
-        <div>
+        <div className="mb-16 md:mb-24">
             <div>
                 <SectionTitle
-                    heading={"CHEF RECOMMENDS"}
+                    heading={"Seller RECOMMENDS"}
                     subheading={"should try"}
                 ></SectionTitle>
             </div>

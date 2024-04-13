@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeb11",
+        "name": "Kinder bueno",
+        "details": "Kinder Bueno chocolate combines creamy hazelnut filling and crispy wafer layers, delivering a delightful balance of sweetness and crunch in every bite.",
+        "image": "https://i.ibb.co/JB8QBX6/CL1.jpg",
+        "category": "Popular",
+        "price": "130tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb12",
+        "name": "Amul Milk Chocolate",
+        "details": "Amul Milk is a popular brand of dairy milk in India, known for its rich taste and high quality, offered in various types including full cream, toned, and double toned.",
+        "image": "https://i.ibb.co/hHzN0fd/CL2.jpg",
+        "category": "Popular",
+        "price": "220tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb13",
+        "name": "Kitkat White",
+        "details": "KitKat White is a variant of the classic KitKat chocolate bar, featuring crispy wafer layers covered in creamy white chocolate, offering a smooth and sweet twist on the traditional milk chocolate version.",
+        "image": "https://i.ibb.co/gDW8FpV/CL5.jpg",
+        "category": "Popular",
+        "price": "110tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb14",
+        "name": "Dairy Milk",
+        "details": "Smooth and creamy milk chocolate beloved worldwide for its rich taste.",
+        "image": "https://i.ibb.co/WnYrbk5/CL8.jpg",
+        "category": "Popular",
+        "price": "30tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb15",
+        "name": "Wellchoco",
+        "details": "Wellchoco: A delightful blend of rich cocoa and smooth milk, crafted to indulge your senses.",
+        "image": "https://i.ibb.co/QvbzvjB/CL9.jpg",
+        "category": "Popular",
+        "price": "130tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb16",
+        "name": "Roerat",
+        "details": "Roerat Choco Oatmeal Coating Puff Ball CH-D087: Crispy cookie ball with white chocolate cream filling, coated in chocolate oatmeal.",
+        "image": "https://i.ibb.co/RzncVZB/CL6.jpg",
+        "category": "Popular",
+        "price": "250tk"
+    }
+]

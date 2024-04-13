@@ -9,7 +9,7 @@ const Featured = () => {
             <div className="  bg-text text-black pt-8  ">
 
                 <SectionTitle
-                    heading={"FROM OUR MENU"}
+                    heading={"FROM Categories"}
                     subheading={"Check it out"}
                 ></SectionTitle>
 
