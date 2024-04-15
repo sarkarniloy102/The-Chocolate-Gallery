@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import SingleCart from "./SingleCart";
+// import SingleCart from "./SingleCart";
+import CartMap from "../../Shared/CartMap/CartMap";
 
 
 const Cart = () => {
@@ -22,7 +23,7 @@ const Cart = () => {
                 ></SectionTitle>
             </div>
             <section>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         cart.map(item =>
                             <SingleCart
@@ -34,7 +35,8 @@ const Cart = () => {
 
                         )
                     }
-                </div>
+                </div> */}
+                <CartMap category={cart}></CartMap>
             </section>
         </div>
     );
