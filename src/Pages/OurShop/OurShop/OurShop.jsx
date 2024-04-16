@@ -12,6 +12,11 @@ const OurShop = () => {
     const [category] = useMenu();
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_bag = category.filter(item => item.category === 'Gift Bag')
+    const custom_pack = category.filter(item=>item.category==='Customized Package')
+    const combo_pack = category.filter(item=>item.category=== 'Combo Package')
+    const Top_demand = category.filter(item=>item.category==='Top On Demand')
+    const chips = category.filter(item=>item.category=== 'Chips')
+
     return (
         <div>
             <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a dish?"} ></Cover>
@@ -21,7 +26,6 @@ const OurShop = () => {
                     <Tab>Chocolate List</Tab>
                     <Tab>Gift Item</Tab>
                     <Tab>Customized Package</Tab>
-                    <Tab>Simple Gift Pack</Tab>
                     <Tab>Combo Package</Tab>
                     <Tab>Top On Demand</Tab>
                    
@@ -32,6 +36,18 @@ const OurShop = () => {
                 </TabPanel>
                 <TabPanel>
                     <CartMap category={gift_bag}></CartMap>
+                </TabPanel>
+                <TabPanel>
+                    <CartMap category={custom_pack}></CartMap>
+                </TabPanel>
+                <TabPanel>
+                    <CartMap category={combo_pack}></CartMap>
+                </TabPanel>
+                <TabPanel>
+                    <CartMap category={Top_demand}></CartMap>
+                </TabPanel>
+                <TabPanel>
+                    <CartMap category={chips}></CartMap>
                 </TabPanel>
             </Tabs>
         </div>

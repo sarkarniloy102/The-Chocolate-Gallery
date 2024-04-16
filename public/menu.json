@@ -81,106 +81,122 @@
     },
     {
         "_id": "642c155b2c4774f05c36eebb",
-        "name": "Hazelnut Heaven",
-        "details": "Milk chocolate bar generously filled with whole hazelnuts.",
-        "image": "https://example.com/images/hazelnut-heaven.jpg",
-        "category": "Nuts",
-        "price": 5.00
+        "name": "Package 1",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/khPcNJ9/2.jpg",
+        "category": "Customized Package",
+        "price": "600tk"
     },
     {
         "_id": "642c155b2c4774f05c36eebc",
-        "name": "Mint Chocolate Chip",
-        "details": "Dark chocolate with natural peppermint and chocolate chips.",
-        "image": "https://example.com/images/mint-chocolate.jpg",
-        "category": "Bars",
-        "price": 2.95
+        "name": "Package 2",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": " https://i.ibb.co/VYs8Wmc/3.jpg",
+        "category": "Customized Package",
+        "price": "700tk"
     },
     {
         "_id": "642c155b2c4774f05c36eebd",
-        "name": "Orange Infusion",
-        "details": "Dark chocolate infused with a burst of orange zest.",
-        "image": "https://example.com/images/orange-infusion.jpg",
-        "category": "Infusions",
-        "price": 3.25
+        "name": "Package 3",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/KzBx8Bn/c4.jpg",
+        "category": "Customized Package",
+        "price": "600tk"
     },
     {
         "_id": "642c155b2c4774f05c36eebe",
-        "name": "Peanut Butter Cups",
-        "details": "Creamy peanut butter encased in rich milk chocolate.",
-        "image": "https://example.com/images/peanut-butter-cups.jpg",
-        "category": "Cups",
-        "price": 1.75
+        "name": "Package 4",
+        "details": "A stylish and convenient packaging solution for presenting chocolates, offering elegance and convenience for any occasion.",
+        "image": "https://i.ibb.co/RbLMZjg/cata1.jpg",
+        "category": "Customized Package",
+        "price": "700tk"
     },
     {
         "_id": "642c155b2c4774f05c36eebf",
-        "name": "Raspberry Cream Hearts",
-        "details": "Dark chocolate hearts filled with raspberry cream.",
-        "image": "https://example.com/images/raspberry-hearts.jpg",
-        "category": "Valentine's Special",
-        "price": 6.00
+        "name": "Combo 1",
+        "details": "Explore our combo package for a delightful mix of chocolate paired with charming extras like dolls, watches, and perfume, offering you a diverse and convenient shopping experience all in one bundle!",
+        "image": "https://i.ibb.co/LSgHL63/combo1.jpg",
+        "category": "Combo Package",
+        "price": "1200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec0",
-        "name": "Ginger Spice",
-        "details": "Dark chocolate with a kick of ginger spice.",
-        "image": "https://example.com/images/ginger-spice.jpg",
-        "category": "Infusions",
-        "price": 3.85
+        "name": "Combo 2",
+        "details": "Explore our combo package for a delightful mix of chocolate paired with charming extras like dolls, watches, and perfume, offering you a diverse and convenient shopping experience all in one bundle!",
+        "image": "https://i.ibb.co/fG70TSh/combo2.jpg",
+        "category": "Combo Package",
+        "price": "900tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec1",
-        "name": "Banana Bliss",
-        "details": "Milk chocolate bar with banana cream filling.",
-        "image": "https://example.com/images/banana-bliss.jpg",
-        "category": "Filled Chocolates",
-        "price": 3.50
+        "name": "Combo 3",
+        "details": "Explore our combo package for a delightful mix of chocolate paired with charming extras like dolls, watches, and perfume, offering you a diverse and convenient shopping experience all in one bundle!",
+        "image": "https://i.ibb.co/gv2g5Mq/combo3.jpg",
+        "category": "Combo Package",
+        "price": "900tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec2",
-        "name": "Fruit & Nut Medley",
-        "details": "Dark chocolate bar loaded with assorted fruits and nuts.",
-        "image": "https://example.com/images/fruit-nut-medley.jpg",
-        "category": "Nuts",
-        "price": 5.25
+        "name": "Combo 4",
+        "details": "Explore our combo package for a delightful mix of chocolate paired with charming extras like dolls, watches, and perfume, offering you a diverse and convenient shopping experience all in one bundle!",
+        "image": "https://i.ibb.co/68MwQnH/top2.jpg",
+        "category": "Combo Package",
+        "price": "1100tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec3",
-        "name": "Double Chocolate Cookies",
-        "details": "Crunchy cookies dipped in milk chocolate.",
-        "image": "https://example.com/images/double-chocolate-cookies.jpg",
-        "category": "Cookies",
-        "price": 4.50
+        "name": "Top 1",
+        "details": "Discover our top on-demand package, meticulously adorned and highly sought-after, catering to the most discerning tastes and preferences, ensuring a memorable and in-demand shopping experience for our customers.",
+        "image": "https://i.ibb.co/0Fnz01Q/SGI1.jpg",
+        "category": "Top On Demand",
+        "price": "1400tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec4",
-        "name": "Mocha Chocolate Sticks",
-        "details": "Dark chocolate sticks with a hint of mocha.",
-        "image": "https://example.com/images/mocha-sticks.jpg",
-        "category": "Bars",
-        "price": 3.00
+        "name": "Top 2",
+        "details": "Discover our top on-demand package, meticulously adorned and highly sought-after, catering to the most discerning tastes and preferences, ensuring a memorable and in-demand shopping experience for our customers.",
+        "image": "https://i.ibb.co/4F88qr3/SGI2.jpg",
+        "category": "Top On Demand",
+        "price": "1200tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec5",
-        "name": "Cinnamon Roll Chocolate",
-        "details": "White chocolate with cinnamon and sugar swirls.",
-        "image": "https://example.com/images/cinnamon-roll.jpg",
-        "category": "Infusions",
-        "price": 3.25
+        "name": "Top 3",
+        "details": "Discover our top on-demand package, meticulously adorned and highly sought-after, catering to the most discerning tastes and preferences, ensuring a memorable and in-demand shopping experience for our customers.",
+        "image": "https://i.ibb.co/hCmfsYN/SGI3.jpg",
+        "category": "Top On Demand",
+        "price": "1000tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec6",
-        "name": "Blackberry Brandy Bars",
-        "details": "Dark chocolate bars infused with blackberry brandy.",
-        "image": "https://example.com/images/blackberry-brandy.jpg",
-        "category": "Alcohol Infused",
-        "price": 4.95
+        "name": "Pringles Big",
+        "details": "Pringles are stackable potato and wheat-based chips known for their unique saddle shape and iconic cylindrical packaging, offering a wide range of flavors and a distinct snacking experience worldwide.",
+        "image": "https://i.ibb.co/4pgbSP2/chips2.jpg",
+        "category": "Chips",
+        "price": "300tk"
     },
     {
         "_id": "642c155b2c4774f05c36eec7",
-        "name": "Spiced Rum Truffles",
-        "details": "Milk chocolate truffles with a spiced rum filling.",
-        "image": "https://example.com/images/spiced-rum-truffles.jpg",
-        "category": "Alcohol Infused",
-        "price": 7.50
+        "name": "Pringles small",
+        "details": "Pringles are stackable potato and wheat-based chips known for their unique saddle shape and iconic cylindrical packaging, offering a wide range of flavors and a distinct snacking experience worldwide.",
+        "image": "https://i.ibb.co/XCJ4GGG/chips1.jpg",
+        "category": "Chips",
+        "price": "130tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eec8",
+        "name": "Top 4",
+        "details": "Discover our top on-demand package, meticulously adorned and highly sought-after, catering to the most discerning tastes and preferences, ensuring a memorable and in-demand shopping experience for our customers.",
+        "image": "https://i.ibb.co/Q9xSG7w/top3.jpg",
+        "category": "Top On Demand",
+        "price": "1000tk"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eec9",
+        "name": "Top 5",
+        "details": "Discover our top on-demand package, meticulously adorned and highly sought-after, catering to the most discerning tastes and preferences, ensuring a memorable and in-demand shopping experience for our customers.",
+        "image": "https://i.ibb.co/FWYfqVX/Top1.jpg",
+        "category": "Top On Demand",
+        "price": "1000tk"
     }
 ]
