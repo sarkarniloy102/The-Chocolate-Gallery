@@ -32,8 +32,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className=""><NavLink className="flex items-center gap-1"><p >SIGN IN</p> <CgProfile className="text-xl" />
-</NavLink> </a>
+                <a className=""><NavLink className="flex items-center gap-1" to={"/signup"}><p >SIGN IN</p> <CgProfile className="text-xl" />
+                </NavLink> </a>
             </div>
         </div>
     );
