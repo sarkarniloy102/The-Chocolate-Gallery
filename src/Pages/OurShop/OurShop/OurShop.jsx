@@ -12,23 +12,23 @@ const OurShop = () => {
     const [category] = useMenu();
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_bag = category.filter(item => item.category === 'Gift Bag')
-    const custom_pack = category.filter(item=>item.category==='Customized Package')
-    const combo_pack = category.filter(item=>item.category=== 'Combo Package')
-    const Top_demand = category.filter(item=>item.category==='Top On Demand')
-    const chips = category.filter(item=>item.category=== 'Chips')
+    const custom_pack = category.filter(item => item.category === 'Customized Package')
+    const combo_pack = category.filter(item => item.category === 'Combo Package')
+    const Top_demand = category.filter(item => item.category === 'Top On Demand')
+    const chips = category.filter(item => item.category === 'Chips')
 
     return (
-        <div>
+        <div className='space-y-10'>
             <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a dish?"} ></Cover>
 
             <Tabs defaultIndex={tabindex} onSelect={(index) => setTabindex(index)}>
-                <TabList>
+                <TabList className="text-md mb-4 flex justify-center">
                     <Tab>Chocolate List</Tab>
                     <Tab>Gift Item</Tab>
                     <Tab>Customized Package</Tab>
                     <Tab>Combo Package</Tab>
                     <Tab>Top On Demand</Tab>
-                   
+
                     <Tab>Chips</Tab>
                 </TabList>
                 <TabPanel>
