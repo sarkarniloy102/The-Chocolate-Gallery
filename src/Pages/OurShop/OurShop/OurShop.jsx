@@ -5,11 +5,15 @@ import coverShop from '../../../assets/backgroundimage/shopCoverr.jpeg'
 import { useState } from 'react';
 import useMenu from '../../../Hooks/useMenu';
 import CartMap from '../../../Shared/CartMap/CartMap';
+import { useParams } from 'react-router-dom';
 
 
 const OurShop = () => {
     const [tabindex, setTabindex] = useState(0);
     const [category] = useMenu();
+    // The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched
+    const {Category} = useParams();
+    console.log(Category);
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_bag = category.filter(item => item.category === 'Gift Bag')
     const custom_pack = category.filter(item => item.category === 'Customized Package')
