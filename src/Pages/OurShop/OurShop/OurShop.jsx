@@ -9,11 +9,15 @@ import { useParams } from 'react-router-dom';
 
 
 const OurShop = () => {
-    const [tabindex, setTabindex] = useState(0);
+
     const [category] = useMenu();
+    const Categories = ['Chocolate List', 'Gift Item', 'Customized Package', 'Combo Package', 'Top On Demand', 'Chips'];
     // The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched
-    const {Category} = useParams();
-    console.log(Category);
+    const { OrderCategory } = useParams();
+    const initialIndex = Categories.indexOf(OrderCategory);
+    const [tabindex, setTabindex] = useState(initialIndex);
+    // console.log(OrderCategory);
+    
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_bag = category.filter(item => item.category === 'Gift Bag')
     const custom_pack = category.filter(item => item.category === 'Customized Package')
@@ -23,7 +27,7 @@ const OurShop = () => {
 
     return (
         <div className='space-y-10'>
-            <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a dish?"} ></Cover>
+            <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a chocolate?"} ></Cover>
 
             <Tabs defaultIndex={tabindex} onSelect={(index) => setTabindex(index)}>
                 <TabList className="text-md mb-4 flex justify-center">
@@ -32,7 +36,6 @@ const OurShop = () => {
                     <Tab>Customized Package</Tab>
                     <Tab>Combo Package</Tab>
                     <Tab>Top On Demand</Tab>
-
                     <Tab>Chips</Tab>
                 </TabList>
                 <TabPanel>

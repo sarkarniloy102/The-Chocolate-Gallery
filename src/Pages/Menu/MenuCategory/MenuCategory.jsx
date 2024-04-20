@@ -20,7 +20,7 @@ const MenuCategory = ({ items, coverImg, title }) => {
                     ></MenuItems>)
                 }
             </div>
-            <p className="text-black flex justify-center mt-7 mb-20"> <NavLink className="p-3 rounded-xl border-b-4 border-black" to={`/ourshop/${title} `}>ORDER YOUR FAVOURITE FOOD</NavLink></p>
+            <p className="text-black flex justify-center mt-7 mb-20"> <NavLink className="p-3 rounded-xl border-b-4 border-black" to={`/ourshop/${title}`}>ORDER YOUR FAVOURITE FOOD</NavLink></p>
 
         </div>
     );
