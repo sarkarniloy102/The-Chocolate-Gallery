@@ -6,6 +6,7 @@ import { useState } from 'react';
 import useMenu from '../../../Hooks/useMenu';
 import CartMap from '../../../Shared/CartMap/CartMap';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 const OurShop = () => {
@@ -26,7 +27,11 @@ const OurShop = () => {
     const chips = category.filter(item => item.category === 'Chips')
 
     return (
+        
         <div className='space-y-10'>
+             <Helmet>
+                <title>TCG | Shop</title>
+            </Helmet>
             <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a chocolate?"} ></Cover>
 
             <Tabs defaultIndex={tabindex} onSelect={(index) => setTabindex(index)}>

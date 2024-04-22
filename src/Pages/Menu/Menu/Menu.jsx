@@ -21,7 +21,7 @@ const Menu = () => {
     return (
         <div>
             <Helmet>
-                <title>TCG | Menu</title>
+                <title>TCG | Category</title>
             </Helmet>
             <Cover img={img} title={"OUR Collection"}
                 details={"Would you like to try a chocolate?"}

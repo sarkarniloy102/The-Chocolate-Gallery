@@ -18,7 +18,8 @@ const SingleCart = ({ item }) => {
                     <p>{details}</p>
 
                     <div className="card-actions justify-center">
-                        <button className="btn bg-slate-200 text-yellow-500">Add to cart</button>
+                        <button className="btn bg-slate-200 rounded-lg text-yellow-500 border-0 border-b-4 border-yellow-400">Add to cart</button>
+                       
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import CartMap from "../../Shared/CartMap/CartMap";
 const Cart = () => {
     const [cart, setcart] = useState([]);
     useEffect(() => {
-        fetch('popular.json')
+        fetch('http://localhost:5000/popular')
             .then(res => res.json())
             .then(data => {
                 const popularItems = data.filter(item => item.category === 'Popular');
