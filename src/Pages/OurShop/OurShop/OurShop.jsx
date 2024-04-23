@@ -18,7 +18,7 @@ const OurShop = () => {
     const initialIndex = Categories.indexOf(OrderCategory);
     const [tabindex, setTabindex] = useState(initialIndex);
     // console.log(OrderCategory);
-    
+
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_bag = category.filter(item => item.category === 'Gift Bag')
     const custom_pack = category.filter(item => item.category === 'Customized Package')
@@ -27,9 +27,9 @@ const OurShop = () => {
     const chips = category.filter(item => item.category === 'Chips')
 
     return (
-        
+
         <div className='space-y-10'>
-             <Helmet>
+            <Helmet>
                 <title>TCG | Shop</title>
             </Helmet>
             <Cover img={coverShop} title={"Our shop"} details={"Would you like to try a chocolate?"} ></Cover>
