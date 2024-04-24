@@ -4,7 +4,7 @@ const SingleCart = ({ item }) => {
     const { image, name, details, price } = item;
     return (
         <section>
-            <div className="card card-compact w-96 h-96  shadow-xl">
+            <div className="card card-compact w-full md:w-96 h-96  shadow-xl">
 
                 <figure className="relative">
                     <img src={image} className="" alt="Chocolate" />

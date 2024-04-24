@@ -7,7 +7,7 @@ const Navbar = () => {
     const navlink =
         <>
             <NavLink className=" font-semibold focus:text-yellow-200">HOME</NavLink>
-            <NavLink className="font-semibold focus:text-yellow-200">CONTACT US</NavLink>
+            <NavLink className="font-semibold focus:text-yellow-200" to={"/contactus"}>CONTACT US</NavLink>
             <NavLink className="font-semibold focus:text-yellow-200">DASHBOARD</NavLink>
             <NavLink className="font-semibold focus:text-yellow-200" to={"/menu"}>OUR MENU</NavLink>
             <NavLink className=" font-semibold focus:text-yellow-200" to={"/ourshop/Chocolate List"}>OUR SHOP</NavLink>
