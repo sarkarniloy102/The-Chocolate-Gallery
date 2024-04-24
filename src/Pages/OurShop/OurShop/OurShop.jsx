@@ -62,6 +62,8 @@ const OurShop = () => {
                     <CartMap category={chips}></CartMap>
                 </TabPanel>
             </Tabs>
+            
+
         </div>
     );
 };
