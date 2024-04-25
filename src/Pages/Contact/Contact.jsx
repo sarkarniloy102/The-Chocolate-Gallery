@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Cover from "../../Shared/Cover/Cover";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import contactImg from "../../assets/backgroundimage/contactback.jpeg"
@@ -7,6 +8,9 @@ import { FaClock, FaLocationArrow, FaPhone } from "react-icons/fa";
 const Contact = () => {
     return (
         <div>
+            <Helmet>
+                <title>TCG | contact</title>
+            </Helmet>
             <Cover img={contactImg} title={"Contact Us"} details={"would you like to try a chocolate?"}></Cover>
             {/* part 1 */}
             <SectionTitle heading={"our location"} subheading={"visit us"}></SectionTitle>

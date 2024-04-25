@@ -1,11 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 
 
 const Main = () => {
+    const location = useLocation();
+    const IsSignup = location.pathname.includes('signin');
+
     return (
         <div className="max-w-screen-xl mx-auto ">
-            <Navbar></Navbar>
+            {IsSignup || <Navbar></Navbar>}
             <Outlet></Outlet>
         </div>
     );
