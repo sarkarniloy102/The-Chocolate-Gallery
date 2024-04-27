@@ -32,13 +32,15 @@ const SignIn = () => {
 
     return (
         <div className=" hero max-h-screen py-20  flex flex-col justify-center items-center">
-            <div className=" hero-content flex flex-col justify-center items-center lg:flex-row p-2 md:p-16 rounded-xl shadow-lg  gap-20 bg-slate-200">
+
+            <div className=" hero-content flex flex-col-reverse justify-center items-center lg:flex-row p-2 md:p-16 rounded-xl shadow-lg  gap-20 bg-slate-200">
                 {/* 1 */}
                 <div>
                     <img src={signupimg} className="h-96" alt="Sign up" />
                 </div>
                 {/* 2 */}
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl text-black">
+                    <h2 className="text-3xl font-bold text-center">Sign In</h2>
                     <form onSubmit={handleSignIn} className="card-body">
                         <div className="form-control">
                             <label className="label">
