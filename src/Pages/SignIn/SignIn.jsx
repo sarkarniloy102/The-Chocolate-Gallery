@@ -1,11 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import signupimg from "../../assets/backgroundimage/login.jpeg"
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
+import { AuthContext } from "../../Providers/AuthProvider";
+import { NavLink } from "react-router-dom";
 
 
 const SignIn = () => {
     const captcharef = useRef(null);
     const [disabled, setDisabled] = useState(true);
+
+    const { SignIn } = useContext(AuthContext);
+
     const handleSignIn = event => {
         event.preventDefault();
         const form = event.target;
@@ -74,8 +79,9 @@ const SignIn = () => {
                         </div>
                         <div className="form-control mt-6">
 
-                            <input disabled={disabled} type="submit" className="btn btn-primary" value="Sign In" />
+                            <input disabled={disabled} type="submit" className="btn bg-violet-500 text-black hover:text-white border-none" value="Sign In" />
                         </div>
+                        <p className="flex justify-center items-center"><small>New here? <NavLink to={"/signup"} className="text-violet-600 hover:underline hover:text-[D1A054]">Create a new account</NavLink> </small></p>
                     </form>
                 </div>
             </div>
