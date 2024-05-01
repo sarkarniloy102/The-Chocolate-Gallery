@@ -6,12 +6,11 @@ import { useForm } from "react-hook-form";
 
 
 const SignUp = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = data => {
         console.log(data)
     };
-    console.log(watch("example"));
 
     return (
         <div className=" hero max-h-screen py-20  flex flex-col justify-center items-center">
@@ -45,7 +44,16 @@ const SignUp = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" {...register("password")} name="password" placeholder="password" className="input input-bordered bg-white" required />
+                            <input type="password" {...register("password", {
+                                required: true,
+                                minLength: 6,
+                                maxLength: 12,
+                                pattern: /(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
+                            })} name="password" placeholder="password" className="input input-bordered bg-white" required />
+                            {/* error handling */}
+                            {errors.password?.type === 'minLength' && <p className="text-red-500" role="alert">Password must be 6 character</p>}
+                            {errors.password?.type === 'maxLength' && <p className="text-red-500" role="alert">Password must be less than 13 character</p>}
+                            {errors.password?.type === 'pattern' && <p className="text-red-500" role="alert">Password must have one uppercase & one lowercase & one special character & one digit</p>}
 
                         </div>
 
