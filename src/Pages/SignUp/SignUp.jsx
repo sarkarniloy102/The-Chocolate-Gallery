@@ -2,18 +2,32 @@
 import signupimg from "../../assets/backgroundimage/login.jpeg"
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
+    const { createUser } = useContext(AuthContext);
+
     const onSubmit = data => {
-        console.log(data)
+        console.log(data);
+        createUser(data.email, data.password)
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser);
+            })
     };
 
     return (
+
         <div className=" hero max-h-screen py-20  flex flex-col justify-center items-center">
+            <Helmet>
+                <title>TCG | Sign Up</title>
+            </Helmet>
 
             <div className=" hero-content flex flex-col-reverse justify-center items-center lg:flex-row-reverse p-2 md:p-16 rounded-xl shadow-lg  gap-20 bg-slate-200">
                 {/* 1 */}

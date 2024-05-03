@@ -3,6 +3,7 @@ import signupimg from "../../assets/backgroundimage/login.jpeg"
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { Helmet } from "react-helmet";
 
 
 const SignIn = () => {
@@ -43,6 +44,9 @@ const SignIn = () => {
 
     return (
         <div className=" hero max-h-screen py-20  flex flex-col justify-center items-center">
+            <Helmet>
+                <title>TCG | Sign In</title>
+            </Helmet>
 
             <div className=" hero-content flex flex-col-reverse justify-center items-center lg:flex-row p-2 md:p-16 rounded-xl shadow-lg  gap-20 bg-slate-200">
                 {/* 1 */}

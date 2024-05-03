@@ -1,8 +1,24 @@
 import { NavLink } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import logo from "../../assets/logoo.jpg"
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { IoMdLogOut } from "react-icons/io";
+
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then = (() => {
+
+            })
+                .catch = ((error) => {
+                    console.log(error)
+                })
+    }
 
     const navlink =
         <>
@@ -11,6 +27,7 @@ const Navbar = () => {
             <NavLink className="font-semibold focus:text-yellow-200">DASHBOARD</NavLink>
             <NavLink className="font-semibold focus:text-yellow-200" to={"/menu"}>OUR MENU</NavLink>
             <NavLink className=" font-semibold focus:text-yellow-200" to={"/ourshop/Chocolate List"}>OUR SHOP</NavLink>
+
 
         </>
     return (
@@ -32,8 +49,18 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className=""><NavLink className="flex items-center gap-1" to={"/signin"}><p >SIGN IN</p> <CgProfile className="text-xl" />
-                </NavLink> </a>
+
+                {
+                    user ?
+                        <><a onClick={handleLogOut} className=""><NavLink className="flex items-center gap-1" to={"/signin"}><p >Sign Out</p> <IoMdLogOut className="text-xl" />
+
+                        </NavLink> </a></>
+                        : <>
+                            {/* <a className=""><NavLink className="flex items-center gap-1" to={"/signin"}><p >SIGN IN</p> <CgProfile className="text-xl" />
+                            </NavLink> </a> */}
+                            <button className="btn btn-sm"> <NavLink className="flex items-center gap-1" to={"/signin"}>SIGN IN <CgProfile className="text-xl" /></NavLink> </button>
+                        </>
+                }
             </div>
         </div>
     );
