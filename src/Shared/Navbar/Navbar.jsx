@@ -52,13 +52,10 @@ const Navbar = () => {
 
                 {
                     user ?
-                        <><a onClick={handleLogOut} className=""><NavLink className="flex items-center gap-1" to={"/signin"}><p >Sign Out</p> <IoMdLogOut className="text-xl" />
-
-                        </NavLink> </a></>
+                        <> <button onClick={handleLogOut} className="btn btn-outline  btn-sm text-black"> <NavLink className="flex items-center gap-1">SIGN OUT <IoMdLogOut className="text-xl" />
+                        </NavLink> </button></>
                         : <>
-                            {/* <a className=""><NavLink className="flex items-center gap-1" to={"/signin"}><p >SIGN IN</p> <CgProfile className="text-xl" />
-                            </NavLink> </a> */}
-                            <button className="btn btn-sm"> <NavLink className="flex items-center gap-1" to={"/signin"}>SIGN IN <CgProfile className="text-xl" /></NavLink> </button>
+                            <button className="btn btn-outline  btn-sm text-black"> <NavLink className="flex items-center gap-1" to={"/signin"}>SIGN IN <CgProfile className="text-xl" /></NavLink> </button>
                         </>
                 }
             </div>
