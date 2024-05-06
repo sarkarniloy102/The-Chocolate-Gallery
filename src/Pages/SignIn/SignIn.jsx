@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import signupimg from "../../assets/backgroundimage/login.jpeg"
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet";
 import Swal from 'sweetalert2'
@@ -11,8 +11,11 @@ import Swal from 'sweetalert2'
 const SignIn = () => {
 
     const [disabled, setDisabled] = useState(true);
-
     const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
     const handleSignIn = event => {
         event.preventDefault();
@@ -31,6 +34,7 @@ const SignIn = () => {
                     showConfirmButton: false,
                     timer: 1500
                 });
+                navigate(from, { replace: true })
                 console.log(user);
             })
     }

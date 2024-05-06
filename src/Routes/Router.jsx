@@ -8,6 +8,7 @@ import OurShop from "../Pages/OurShop/OurShop/OurShop";
 import SignUp from "../Pages/SignUp/SignUp";
 import Contact from "../Pages/Contact/Contact";
 import SignIn from "../Pages/SignIn/SignIn";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -36,7 +37,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/contactus",
-                element: <Contact></Contact>
+                element: <PrivateRoute><Contact></Contact></PrivateRoute>
             }
         ]
     },
