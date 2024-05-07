@@ -4,6 +4,9 @@ import logo from "../../assets/logoo.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { IoMdLogOut } from "react-icons/io";
+import { TiShoppingCart } from "react-icons/ti";
+
+
 
 
 const Navbar = () => {
@@ -27,6 +30,11 @@ const Navbar = () => {
             <NavLink className="font-semibold focus:text-yellow-200">DASHBOARD</NavLink>
             <NavLink className="font-semibold focus:text-yellow-200" to={"/menu"}>OUR MENU</NavLink>
             <NavLink className=" font-semibold focus:text-yellow-200" to={"/ourshop/Chocolate List"}>OUR SHOP</NavLink>
+            <NavLink to={"/"} className=" font-semibold focus:text-yellow-200">
+                <button className="border bg-slate-300 px-1 rounded-md flex gap-2 items-center justify-center">
+                    <TiShoppingCart className="text-2xl text-black" />
+                    <div className="badge badge-secondary">0</div>
+                </button></NavLink>
 
 
         </>
