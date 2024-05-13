@@ -27,14 +27,14 @@ const CartMap = ({ category }) => {
 
                     )
                 }
-                
+
             </div>
-            <Pagination 
-            totalCards={category.length} 
-            cardPerPage={cardPerPage}
-            setcurrentPage={setcurrentPage} 
-            currentPage={currentPage}></Pagination>
-            
+            <Pagination
+                totalCards={category.length}
+                cardPerPage={cardPerPage}
+                setcurrentPage={setcurrentPage}
+                currentPage={currentPage}></Pagination>
+
         </div>
     );
 };
