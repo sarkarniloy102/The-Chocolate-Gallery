@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { IoMdLogOut } from "react-icons/io";
 import { TiShoppingCart } from "react-icons/ti";
+import useCart from "../../Hooks/useCart";
 
 
 
@@ -12,6 +13,7 @@ import { TiShoppingCart } from "react-icons/ti";
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+    const [cart] = useCart();
 
     const handleLogOut = () => {
         logOut()
@@ -33,7 +35,7 @@ const Navbar = () => {
             <NavLink to={"/"} className=" font-semibold focus:text-yellow-200">
                 <button className="border bg-slate-300 px-1 rounded-md flex gap-2 items-center justify-center">
                     <TiShoppingCart className="text-2xl text-black" />
-                    <div className="badge badge-secondary">0</div>
+                    <div className="badge badge-secondary">{cart.length}</div>
                 </button></NavLink>
 
 
