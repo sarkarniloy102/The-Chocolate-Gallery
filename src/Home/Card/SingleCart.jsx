@@ -11,9 +11,10 @@ const SingleCart = ({ item }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const axiosSecure = useAxiosSecure();
-    const [, refetch] = useCart();
-    const handleAddToCart = ((item) => {
-        console.log(item);
+    const [cart, refetch] = useCart();
+    const handleAddToCart = (() => {
+        // console.log(item);
+        console.log(cart.length)
         if (user && user.email) {
             //  information send to database
             const cartItem = {
@@ -71,7 +72,7 @@ const SingleCart = ({ item }) => {
                     <p>{details}</p>
 
                     <div className="card-actions justify-center">
-                        <button onClick={() => handleAddToCart(item)} className="btn bg-slate-200 rounded-lg text-yellow-500 border-0 border-b-4 border-yellow-400">Add to cart</button>
+                        <button onClick={handleAddToCart} className="btn bg-slate-200 rounded-lg text-yellow-500 border-0 border-b-4 border-yellow-400">Add to cart</button>
 
                     </div>
                 </div>

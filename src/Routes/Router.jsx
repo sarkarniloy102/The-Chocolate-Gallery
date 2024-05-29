@@ -9,6 +9,8 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Contact from "../Pages/Contact/Contact";
 import SignIn from "../Pages/SignIn/SignIn";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../Layout/Dashboard";
+import ShowCart from "../Pages/Dashboard/ShowCart/ShowCart";
 
 export const router = createBrowserRouter([
     {
@@ -41,4 +43,14 @@ export const router = createBrowserRouter([
             }
         ]
     },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: "cart",
+                element: <ShowCart></ShowCart>
+            }
+        ]
+    }
 ]);
