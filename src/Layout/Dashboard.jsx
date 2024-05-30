@@ -1,4 +1,5 @@
-import { FaCalendar, FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaCalendar, FaHome, FaList, FaPaypal, FaShoppingCart } from "react-icons/fa";
+import { FaStar } from "react-icons/fa6";
 import { NavLink, Outlet } from "react-router-dom";
 
 
@@ -21,9 +22,27 @@ const Dashboard = () => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to={"/dashboard/payment"}>
+                           <FaPaypal></FaPaypal>
+                            Payment History
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to={"/dashboard/cart"}>
                             <FaShoppingCart ></FaShoppingCart>
                             Mycart
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/dashboard/addReview"}>
+                           <FaStar></FaStar>
+                            Add Review
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/dashboard/bookings"}>
+                           <FaList></FaList>
+                            My Bookings
                         </NavLink>
                     </li>
                 </ul>
