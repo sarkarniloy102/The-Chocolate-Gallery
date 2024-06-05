@@ -21,6 +21,7 @@ const SingleCart = ({ item }) => {
                 itemId: _id,
                 email: user.email,
                 image,
+                name,
                 price
             }
             axiosSecure.post('/carts', cartItem)
