@@ -6,10 +6,14 @@ import { Helmet } from "react-helmet";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 
 
 const SignUp = () => {
+
+    const axiosPublic = useAxiosPublic();
+
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -24,16 +28,28 @@ const SignUp = () => {
                 console.log(loggedUser);
                 updateUserProfile(data.name, data.photourl)
                     .then(() => {
-                        console.log("user prfile updated");
-                        reset();
-                        Swal.fire({
-                            position: "center-center",
-                            icon: "success",
-                            title: "User Profile created successfully",
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                        navigate(from, { replace: true })
+                        // saved user information in database
+                        const userInfo = {
+                            name: data.name,
+                            email: data.email
+                        }
+
+                        axiosPublic.post('/users', userInfo)
+                            .then(res => {
+                                if (res.data.insertedId) {
+                                    console.log("user prfile updated");
+                                    reset();
+                                    Swal.fire({
+                                        position: "center-center",
+                                        icon: "success",
+                                        title: "User Profile created successfully",
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                    });
+                                    navigate(from, { replace: true })
+                                }
+                            })
+
                     })
                     .catch((error) => {
                         console.log(error)
