@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import SocialLogin from "../../Components/SocialLogin/SocialLogin";
 
 
 
@@ -118,6 +119,8 @@ const SignUp = () => {
 
                             <input type="submit" className="btn bg-violet-500 text-black hover:text-white border-none" value="Sign Up" />
                         </div>
+                        <div className="divider"></div> 
+                        <SocialLogin></SocialLogin>
                         <p className="flex justify-center items-center"><small>Aleready registered? <NavLink to={"/signin"} className="text-violet-600 hover:underline hover:text-[D1A054]">Go to Sign In</NavLink> </small></p>
                     </form>
                 </div>
