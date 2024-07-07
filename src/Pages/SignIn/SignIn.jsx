@@ -99,7 +99,7 @@ const SignIn = () => {
 
                             <input disabled={disabled} type="submit" className="btn bg-violet-500 text-black hover:text-white border-none" value="Sign In" />
                         </div>
-                        <div className="divider"></div> 
+                        <div className="divider"></div>
                         <SocialLogin></SocialLogin>
                         <p className="flex justify-center items-center"><small>New here? <NavLink to={"/signup"} className="text-violet-600 hover:underline hover:text-[D1A054]">Create a new account</NavLink> </small></p>
                     </form>
