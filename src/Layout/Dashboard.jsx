@@ -1,13 +1,16 @@
-import {  FaCalendar, FaHome, FaJediOrder, FaList, FaPaypal, FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaCalendar, FaHome, FaJediOrder, FaList, FaPaypal, FaShoppingCart, FaUser } from "react-icons/fa";
 import { FaMessage, FaStar } from "react-icons/fa6";
 import { NavLink, Outlet } from "react-router-dom";
 import useCart from "../Hooks/useCart";
+import useAdmin from "../Hooks/useAdmin";
 
 
 const Dashboard = () => {
     const [cart] = useCart();
 
-    const isAdmin = true;
+    // get isAdmin value from the database
+
+    const [isAdmin] = useAdmin();
     return (
         <div className="flex">
             {/* side bar */}
@@ -33,7 +36,7 @@ const Dashboard = () => {
                                     Manage Items
                                 </NavLink>
                             </li>
-                           
+
                             <li>
                                 <NavLink to={"/dashboard/manageOrders"}>
                                     <FaJediOrder></FaJediOrder>
@@ -44,10 +47,10 @@ const Dashboard = () => {
                             <li>
                                 <NavLink to={"/dashboard/allUsers"}>
                                     <FaUser></FaUser>
-                                   All Users
+                                    All Users
                                 </NavLink>
                             </li>
-                           </>
+                        </>
 
                             : <><li>
                                 <NavLink to={"/dashboard/userHome"}>
