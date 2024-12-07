@@ -7,7 +7,7 @@ import useMenu from "../../Hooks/useMenu";
 
 const PopularMenu = () => {
     const [category] = useMenu();
-    const popular = category.filter(item =>item.category === 'Chocolate List')
+    const popular = category.filter(item => item.category === 'Chocolate List')
     // const [menu, setmenu] = useState([]);
     // useEffect(() => {
     //     fetch('popular.json')
@@ -23,7 +23,7 @@ const PopularMenu = () => {
                 heading={"From Our Categories"}
                 subheading={"Popular Items"}>
             </SectionTitle>
-           
+
             <div className="grid md:grid-cols-2 gap-4">
                 {
                     popular.map(item => <MenuItems
@@ -32,7 +32,7 @@ const PopularMenu = () => {
                     ></MenuItems>)
                 }
             </div>
-            <p className="text-black flex justify-center mt-7"> <NavLink className="p-3 rounded-xl border-b-4">View All Category</NavLink></p>
+            <p className="text-black flex justify-center mt-7"> <NavLink to={'/menu'} className="p-3 rounded-xl border-b-4">View All Category</NavLink></p>
         </section>
     );
 };
