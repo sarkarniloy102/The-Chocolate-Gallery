@@ -3,6 +3,8 @@ import { GoPackageDependents } from "react-icons/go";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import { useForm } from "react-hook-form"
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 // for image hosting in Imagebb 
 const Image_Hosting_Key = import.meta.env.VITE_image_hosting_key;
@@ -11,7 +13,8 @@ const Image_Hosting_Api = `https://api.imgbb.com/1/upload?key=${Image_Hosting_Ke
 const AddItems = () => {
 
     const axiosPublic = useAxiosPublic();
-    const { register, handleSubmit } = useForm()
+    const axiosSecure = useAxiosSecure()
+    const { register, handleSubmit, reset } = useForm()
     const onSubmit = async (data) => {
         console.log(data)
         const imageFile = { image: data.image[0] }
@@ -28,6 +31,18 @@ const AddItems = () => {
                 price: data.price,
                 details: data.details,
                 image: res.data.data.display_url
+            }
+            const menuRes = await axiosSecure.post('/category', menuItem);
+            console.log(menuRes.data);
+            if (menuRes.data.insertedId) {
+                reset();
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: `${data.name} is added to category collection`,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             }
         }
         console.log(res.data);
