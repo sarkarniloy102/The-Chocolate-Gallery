@@ -1,9 +1,39 @@
+
+import { GoPackageDependents } from "react-icons/go";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import { useForm } from "react-hook-form"
+import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+
+// for image hosting in Imagebb 
+const Image_Hosting_Key = import.meta.env.VITE_image_hosting_key;
+const Image_Hosting_Api = `https://api.imgbb.com/1/upload?key=${Image_Hosting_Key}`;
+
 const AddItems = () => {
 
+    const axiosPublic = useAxiosPublic();
     const { register, handleSubmit } = useForm()
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = async (data) => {
+        console.log(data)
+        const imageFile = { image: data.image[0] }
+        const res = await axiosPublic.post(Image_Hosting_Api, imageFile, {
+            headers: {
+                'content-type': 'multipart/form-data'
+            }
+        });
+        // send data to the server
+        if (res.data.success) {
+            const menuItem = {
+                name: data.name,
+                category: data.category,
+                price: data.price,
+                details: data.details,
+                image: res.data.data.display_url
+            }
+        }
+        console.log(res.data);
+    }
+
+
 
     return (
         <div className="m-10 ">
@@ -16,8 +46,9 @@ const AddItems = () => {
                         <label className="label">
                             <span className="label-text text-black">Product name</span>
                         </label>
-                        <input{...register("name")}
-                            type="text" placeholder="chocolate or package name" className="input input-bordered w-full bg-white" />
+                        <input{...register("name",)}
+                            required
+                            type="text" placeholder="chocolate or package name" className="input input-bordered w-full bg-white text-black" />
                     </div>
 
                     {/* catagory and price */}
@@ -27,9 +58,9 @@ const AddItems = () => {
                             <label className="label">
                                 <span className="label-text text-black">Category</span>
                             </label>
-                            <select {...register("category")}
-                                className="select select-bordered w-full bg-white">
-                                <option disabled selected>Category</option>
+                            <select defaultValue={"default"} {...register("category")}
+                                className="select select-bordered w-full text-black bg-white">
+                                <option disabled value="default">Category</option>
                                 <option value="ChocolateList">Chocolate List</option>
                                 <option value="GiftItem">Gift Item</option>
                                 <option value="CustomizedPackage">Customized Package</option>
@@ -44,25 +75,32 @@ const AddItems = () => {
                                 <span className="label-text text-black">Price</span>
                             </label>
                             <input{...register("price")}
-                                type="number" placeholder="price" className="input input-bordered w-full bg-white" />
+                                required
+                                type="text" placeholder="price" className="input input-bordered text-black w-full bg-white" />
                         </div>
                     </div>
-                    {/*  */}
+                    {/* details */}
                     <div className="form-control w-full ">
                         <label className="label">
                             <span className="label-text text-black">Details</span>
                         </label>
-                        <textarea className="textarea textarea-bordered h-40 bg-white" placeholder="product details"></textarea>
+                        <textarea {...register("details")}
+                            required
+                            className="textarea textarea-bordered text-black h-40 bg-white" placeholder="product details"></textarea>
                     </div>
 
                     {/* file input */}
                     <div className="form-control w-full my-6">
-                    <input type="file" className="file-input file-input-bordered w-full bg-white" />
+                        <input {...register("image")}
+                            required
+                            type="file" className="file-input file-input-bordered w-full bg-white" />
                     </div>
 
 
 
-                    <button className="btn  w-full">Add Item</button>
+                    <button className="btn  w-full bg-slate-600 text-yellow-500">Add Item <GoPackageDependents />
+
+                    </button>
                 </form>
             </div>
         </div>
