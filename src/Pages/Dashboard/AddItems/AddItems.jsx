@@ -32,7 +32,7 @@ const AddItems = () => {
                 details: data.details,
                 image: res.data.data.display_url
             }
-            const menuRes = await axiosSecure.post('/category', menuItem);
+            const menuRes = await axiosSecure.post('/allcategory', menuItem);
             console.log(menuRes.data);
             if (menuRes.data.insertedId) {
                 reset();
