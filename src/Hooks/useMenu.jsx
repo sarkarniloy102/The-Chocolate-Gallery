@@ -4,23 +4,14 @@ import useAxiosPublic from "./useAxiosPublic";
 
 const useMenu = () => {
     const axiosPublic = useAxiosPublic();
-    // const [category, setcategory] = useState([]);
-    // const [loading, setloading] = useState(true);
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/allcategory/')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setcategory(data);
-    //             setloading(false);
-    //         })
-    // }, [])
+
 
 
     const { data: category = [], refetch, isError, error } = useQuery({
-        queryKey: ["category"],
+        queryKey: ['category'],
         queryFn: async () => {
             const res = await axiosPublic.get('/allcategory');
-            return res.data;
+            return res.data || [];
         }
     })
     if (isError) {
@@ -30,3 +21,14 @@ const useMenu = () => {
 }
 
 export default useMenu;
+
+    // const [category, setcategory] = useState([]);
+    // const [loading, setloading] = useState(true);
+    // useEffect(() => {
+    //     fetch('the-chocolate-gallery-server.vercel.app/allcategory/')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setcategory(data);
+    //             setloading(false);
+    //         })
+    // }, [])

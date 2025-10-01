@@ -79,9 +79,9 @@ export const router = createBrowserRouter([
                 element: <AdminRoute><ManageItems></ManageItems></AdminRoute>
             },
             {
-                path: 'updateItem/:id',
+                path: "updateItem/:id",
                 element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allcategory/${params.id}`)
+                loader: ({ params }) => fetch(`the-chocolate-gallery-server.vercel.app/allcategory/${params.id}`)
             }
         ]
     }

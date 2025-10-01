@@ -6,7 +6,7 @@ import useMenu from "../../Hooks/useMenu";
 
 
 const PopularMenu = () => {
-    const [category] = useMenu();
+    const category = useMenu();
     const popular = category.filter(item => item.category === 'Chocolate List')
     // const [menu, setmenu] = useState([]);
     // useEffect(() => {

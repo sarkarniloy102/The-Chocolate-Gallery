@@ -11,7 +11,7 @@ import topImg from '../../../assets/backgroundimage/back2.jpeg'
 import customImg from '../../../assets/backgroundimage/custom.jpeg'
 
 const Menu = () => {
-    const [category] = useMenu();
+    const category = useMenu();
     const single_chocolate = category.filter(item => item.category === 'Chocolate List')
     const gift_item = category.filter(item => item.category === 'Gift Bag')
     const custom_pack = category.filter(item => item.category === 'Customized Package')
